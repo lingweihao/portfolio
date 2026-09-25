@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>林未 · 个人作品集</title>
+  <meta name="description" content="前端开发与视觉设计方向的个人作品集网站" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======= 顶部导航 ======= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#hero" class="brand">LIN&nbsp;WEI<span class="brand-dot">.</span></a>
+
+      <nav class="site-nav" id="siteNav" aria-label="主导航">
+        <a href="#hero" class="nav-link is-active" data-section="hero">首页</a>
+        <a href="#works" class="nav-link" data-section="works">作品</a>
+        <a href="#about" class="nav-link" data-section="about">关于</a>
+        <a href="#contact" class="nav-link" data-section="contact">联系</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 移动端全屏抽屉 -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <nav class="drawer-nav">
+      <a href="#hero" class="drawer-link" data-section="hero"><em>01</em>首页</a>
+      <a href="#works" class="drawer-link" data-section="works"><em>02</em>作品</a>
+      <a href="#about" class="drawer-link" data-section="about"><em>03</em>关于</a>
+      <a href="#contact" class="drawer-link" data-section="contact"><em>04</em>联系</a>
+    </nav>
+    <p class="drawer-foot">LIN WEI — PORTFOLIO 2026</p>
+  </div>
+
+  <main>
+    <!-- ======= 首屏 Hero ======= -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker reveal">个人作品集 &nbsp;/&nbsp; PORTFOLIO &nbsp;/&nbsp; 2026</p>
+
+        <h1 class="hero-title reveal">
+          <span class="line">林未</span>
+          <span class="line line-outline">FRONT-END</span>
+          <span class="line">设计师 &amp; 开发者</span>
+        </h1>
+
+        <div class="hero-meta reveal">
+          <span class="hero-rule"></span>
+          <p class="hero-desc">
+            专注于 Web 前端与界面视觉，相信好的作品来自<br />
+            克制的排版、清晰的层级与恰到好处的留白。
+          </p>
+        </div>
+
+        <ul class="hero-tags reveal">
+          <li>前端开发</li>
+          <li>UI / 视觉设计</li>
+          <li>交互原型</li>
+        </ul>
+      </div>
+
+      <div class="hero-side" aria-hidden="true">
+        <span class="hero-year">2026</span>
+        <span class="hero-scroll"><i></i>向下滚动 SCROLL</span>
+      </div>
+    </section>
+
+    <!-- ======= 项目作品 ======= -->
+    <section class="works" id="works">
+      <div class="section-head">
+        <span class="section-index">01</span>
+        <div>
+          <h2 class="section-title">精选项目</h2>
+          <p class="section-sub">SELECTED WORKS — 以图文版式记录每一次动手实践</p>
+        </div>
+      </div>
+
+      <!-- 项目条目由 js/main.js 依据 js/projects.js 渲染 -->
+      <div class="works-list" id="worksList"></div>
+    </section>
+
+    <!-- ======= 关于我 ======= -->
+    <section class="about" id="about">
+      <div class="section-head">
+        <span class="section-index">02</span>
+        <div>
+          <h2 class="section-title">关于我</h2>
+          <p class="section-sub">ABOUT ME — 我是谁，我会什么</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-photo-wrap">
+            <img class="about-photo" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=young%20chinese%20student%20portrait%20sitting%20at%20desk%20with%20laptop%2C%20natural%20window%20light%2C%20calm%20confident%20expression%2C%20editorial%20magazine%20photography%2C%20muted%20warm%20tones&image_size=portrait_4_3" alt="个人照片" loading="lazy" />
+          </div>
+
+          <h3 class="about-col-title">技能方向</h3>
+          <ul class="skill-list">
+            <li><span>界面与视觉</span><em>UI Design / Figma / 排版系统</em></li>
+            <li><span>前端实现</span><em>HTML / CSS / JavaScript</em></li>
+            <li><span>工程化</span><em>响应式布局 / Git / 性能优化</em></li>
+            <li><span>数据与工具</span><em>Python / 数据可视化</em></li>
+          </ul>
+        </div>
+
+        <div class="about-right reveal">
+          <p class="about-lead">一名把「排版感」带进代码里的前端学习者。</p>
+          <p>
+            我是计算机专业的学生，平时喜欢把设计杂志里的版式语言翻译成网页：
+            网格、留白、字号对比、局部色块。课堂上学的是数据结构与网络，
+            课外的项目让我把 HTML、CSS 和 JavaScript 用得越来越顺手。
+          </p>
+          <p>
+            我做过课程实验网站、数据可视化小工具，也替社团设计并实现过活动页面。
+            比起堆特效，我更在意内容是否被清晰地组织、页面在手机上是否依然好看。
+          </p>
+          <p class="about-note">
+            目前正在寻找前端 / 交互方向的实习机会，欢迎老师、同学与企业招聘人员与我交流。
+          </p>
+          <a class="about-cta" href="mailto:linwei@example.com">给我写信 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 联系方式 ======= -->
+    <section class="contact" id="contact">
+      <div class="section-head">
+        <span class="section-index">03</span>
+        <div>
+          <h2 class="section-title">联系方式</h2>
+          <p class="section-sub">CONTACT — 项目合作与实习机会</p>
+        </div>
+      </div>
+
+      <a class="contact-mail reveal" href="mailto:linwei@example.com">linwei@example.com</a>
+
+      <ul class="contact-links reveal">
+        <li><span>GitHub</span><a href="https://github.com/" target="_blank" rel="noopener">github.com/linwei</a></li>
+        <li><span>微信</span><em>linwei_dev</em></li>
+        <li><span>所在地</span><em>中国 · 杭州</em></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 LIN WEI — 以原生 HTML / CSS / JavaScript 手工排版</p>
+    <a href="#hero" class="back-top">回到顶部 ↑</a>
+  </footer>
+
+  <!-- 图片放大查看 lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="关闭">×</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
